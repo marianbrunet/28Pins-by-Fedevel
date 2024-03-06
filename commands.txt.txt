@@ -1,0 +1,14 @@
+For Atmega16U2 (m16u2)
+
+avrdude.exe -c arduino -b 19200 -p xyz
+avrdude.exe -c arduino -b 19200 -p m16u2 -P COM7 -n
+avrdude.exe -c arduino -b 19200 -p m16u2 -P COM7 -U lfuse:w:0xEF:m -U hfuse:w:0xD9:m -U efuse:w:0xF4:m
+avrdude.exe -c arduino -b 19200 -p m16u2 -P COM7 -U flash:w:usbserial.hex
+
+
+
+For Atmega328p (m328p)
+avrdude.exe -c arduino -b 19200 -p xyz
+avrdude.exe -c arduino -b 19200 -p m328p -P COM7 -n
+avrdude.exe -c arduino -b 19200 -p m328p -P COM7 -U lfuse:w:0xFF:m -U hfuse:w:0xDE:m -U efuse:w:0xFD:m 
+avrdude.exe -c arduino -b 19200 -p m328p -P COM7 -U flash:w:optiboot.hex
