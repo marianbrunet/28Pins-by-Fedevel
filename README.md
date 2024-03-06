@@ -51,7 +51,7 @@ Open the latest version of the Arduino IDE.
 		
 		Don't confuse about arduino isp and arduino as isp in programmer!
 
-	![Arduino as ISP.](/Pictures/ArduinoAsISP.png "Arduino as ISP")
+	![Arduino as ISP.](Pictures/ArduinoAsISP.png "Arduino as ISP")
 
 References: 
 
@@ -65,7 +65,7 @@ References:
 	
 	Connect a jumper between pins 3 and 4 of the Header J4 (in my case). This connects signals 16U2_RESETn and 16U2_HDR_RESETn.
 
-	![Program 16U2 jumper.](/Pictures/Program16U2_jumper.png "Program 16U2 jumper")
+	![Program 16U2 jumper.](Pictures/Program16U2_jumper.png "Program 16U2 jumper")
 
 	Connect the **ICSP** (for ATmega2560) header from the Programming board to the **ICSP1** of the new Arduino UNO.
 
@@ -73,11 +73,11 @@ References:
 
 	![MegaICSP.](/Pictures/MegaICSP.png "Mega ICSP")
 
-	![Connecting ICSP.](/Pictures/ConnectingICSP.png "Connecting ICSP")
+	![Connecting ICSP.](Pictures/ConnectingICSP.png "Connecting ICSP")
 
 	On the programming board, disconnect the pin called RESET from the ICSP header, and connect it to pin number #10. In the Arduino Mega 2560, digital pin 10 is PB4 and is used for PWM. 
 
-	![Program 16U2 reset pin.](/Pictures/Program16U2_resetPIN.png "Program 16U2 reset pin")
+	![Program 16U2 reset pin.](Pictures/Program16U2_resetPIN.png "Program 16U2 reset pin")
 	
 	The connections should look like this
 
